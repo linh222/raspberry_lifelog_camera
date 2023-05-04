@@ -17,13 +17,13 @@ This is a step-by-step guide to set up a Raspberry Pi Zero as a time-lapse camer
 1. Load Raspberry Pi OS lite 32 bit to the SD card using Raspberry Pi Imager: https://www.raspberrypi.com/software/
     - Config the SSH and Wifi at the UI
 
-    <img src="load_os_ui.png" alt="Alt text" width="400" height="300">
-    <img src="config_raspian_lite.png" alt="Alt text" width="400" height="300">
+    <img src="images/load_os_ui.png" alt="Alt text" width="400" height="300">
+    <img src="images/config_raspian_lite.png" alt="Alt text" width="400" height="300">
 
 
 2. First boot with Raspberry Pi Zero and set it up as shown in image below.
 
-    <img src="set_up.jpeg" alt="Alt text" width="700" height="500">
+    <img src="images/set_up.jpeg" alt="Alt text" width="700" height="500">
 
 
 3. Login with the username `pi` and password `pass1234` (Note: the password is configed on step 1)
