@@ -1,11 +1,11 @@
-# Raspberry Pi Time-lapse Camera
+# MemoriLens: Design and Implementation of a Lifelog Camera using Raspberry Pi Zero
 
-This is a step-by-step guide to set up a Raspberry Pi Zero as a time-lapse camera and automatically upload the images to a server. 
+This is a step-by-step guide to set up MemoriLens, a Raspberry Pi Zero as a time-lapse camera and automatically upload the images to a server. 
 
 ## Requirements
 
 - Raspberry Pi Zero
-- Camera module (2, 3) and Camera Adaper for Pi Zero
+- Camera module (2, 3) and Camera Adapter for Pi Zero
 - SD Card (minimum 8 GB)
 - HDMI to mini HDMI cable, USB to micro USB cable, micro USB to USB cable
 - WiFi Network - 2.4GHz
