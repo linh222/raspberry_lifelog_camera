@@ -50,8 +50,16 @@ Add the following code, reference: https://docs.arducam.com/Raspberry-Pi-Camera/
 ```
 #!/bin/bash
 script camera_log.txt
-cd /home/pi/webcam 
-libcamera-still -n -t 200000 –width 2560 –height 1440 –timestamp –timelapse 20000 –brightness 0.2
+yearmonth=$(date “+%Y%m”)
+day=$(date “+%d”)
+cd /home/pi/webcam
+mkdir -p $yearmonth
+cd $yearmonth
+mkdir -p $day
+cd $day
+libcamera-still  -n -t 2000 –width 2560 –height 1440 –rotation 180 –exposure sport –autofocus-speed fast –autofocus-range full -o $(date “+%Y%m%d_%H%M%S”).jpg
+sleep 28
+libcamera-still  -n -t 2000 –width 2560 –height 1440 –rotation 180 –exposure sport –autofocus-speed fast –autofocus-range full -o $(date “+%Y%m%d_%H%M%S”).jpg
 exit
 ```
 8. Grant privilege to the file:
@@ -64,7 +72,7 @@ crontab -e
 ```
 Add the following line:
 ```
-*/2 * * * * /home/pi/webcam.sh
+* * * * * /home/pi/webcam.sh
 ```
 This will run the script every two minutes.
 
